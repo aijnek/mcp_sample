@@ -1,0 +1,9 @@
+MCPを理解するためのServerとClientの実装サンプルコード．
+
+uv run blur_client.pyを実行すると，serverを自動的に起動し，messageにかかれている内容でagentがツールを適切に実行する．
+
+これはstdioを介してclientとserverがやりとりするが，clientからネットワークを介してremote MCP serverに接続するようにすることも（そのように記述すれば）できる．
+
+画像をやりとりすることもできるため，Client側とServer側で対応すればmultimodal modelを活用したものもできる．Claude DesktopやClineなどのMCP hostは画像をうまくハンドルするようには作られていないので，そのようなclientは自分で書く必要がある．
+
+serverのdebugは，mcp dev server.pyでMCP inspectorを使うとやりやすい．

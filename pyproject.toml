@@ -1,0 +1,14 @@
+[project]
+name = "mcp-sample"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "facenet-pytorch>=2.5.3",
+    "langchain-google-genai>=2.1.2",
+    "langchain-mcp-adapters>=0.0.3",
+    "langgraph>=0.3.21",
+    "mcp[cli]>=1.6.0",
+    "pillow>=11.1.0",
+]
